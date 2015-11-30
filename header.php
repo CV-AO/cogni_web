@@ -19,8 +19,11 @@
 <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
 <!-- the jScrollPane script -->
 <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
-<!-- the auxillary functions -->
-<script src="js/jquery.dateslider.js" type="text/javascript" charset="utf-8"></script>
+<!-- TIMEPICKER JAVASCRIPT -->
+<script type="text/javascript" src="js/timePicker.js"></script>
+<!-- TIMEPICKER CSS -->
+<link rel="stylesheet" type="text/css" href="timepicker.css">
+
 <script type="text/javascript">
 $(function()
 {
