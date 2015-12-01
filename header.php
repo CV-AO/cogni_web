@@ -19,8 +19,6 @@
 <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
 <!-- the jScrollPane script -->
 <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
-<!-- the auxillary functions -->
-<script src="js/jquery.dateslider.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
 $(function()
 {
@@ -40,9 +38,9 @@ $(function()
 
 		<div id="header">
 		<div id="header_">
-			<div id="header_logo">
-			
-			</div>
+			<a href="index.php" title="Home">
+				<div id="header_logo"></div>
+			</a>
 			<div id="header_menu">
 				<ul>
 					<li class="header_menu_current"><a href="index.php" title="Dashboard">Dashboard</a></li>
