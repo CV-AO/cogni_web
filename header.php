@@ -36,6 +36,7 @@ $(function()
 </head>
 <body>
 <div id="wrapper">
+
 		<div id="header">
 		<div id="header_">
 			<a href="index.php" title="Home">
@@ -47,10 +48,48 @@ $(function()
 					<li><a href="profiles.php" title="Profiles">Profiles</a></li>
 					<li><a href="account.php" title="Account">Account</a></li>
 					<li><a href="" title="FAQ">FAQ</a></li>
-					<li><a href="" title="Contact">Contact</a></li>
+					<li><a href="#excontact" rel="modal:open" title="Contact">Contact</a></li>
 					<li class="header_menu_circle"><a href="" title="Sign Out">Sign Out</a></li>
 					<li class="header_menu_circle"><a href="" title="Order">Order</a></li>
 				</ul>
 			</div>
 		</div>
 		</div>
+		<!-- modal for contact -->
+					<div id="excontact" style="display:none;">
+						<?php 
+$action=$_REQUEST['action']; 
+if ($action=="")    /* display the contact form */ 
+    { 
+    ?> 
+    <form  action="" method="POST" enctype="multipart/form-data"> 
+    <input type="hidden" name="action" value="submit"> 
+     
+    <input id="contact_input" name="name" type="text" value="" size="30" placeholder="Name*"/><br> 
+     
+    <input id="contact_input" name="email" type="text" value="" size="30" placeholder="Email*"/><br> 
+     
+    <textarea id="contact_message" name="message" rows="7" cols="30" placeholder="Message*"></textarea><br> 
+    <input type="submit" id="account_save_two" value="Send email"/>
+    </form> 
+    <?php 
+    }  
+else                /* send the submitted data */ 
+    { 
+    $name=$_REQUEST['name']; 
+    $email=$_REQUEST['email']; 
+    $message=$_REQUEST['message']; 
+    if (($name=="")||($email=="")||($message=="")) 
+        { 
+        echo "All fields are required, please fill <a href=\"\">the form</a> again."; 
+        } 
+    else{         
+        $from="From: $name<$email>\r\nReturn-path: $email"; 
+        $subject="Message sent using your contact form"; 
+        mail("zach@zachis.it", $subject, $message, $from); 
+        echo "Email sent!"; 
+        } 
+    }   
+?> 
+					</div>
+		<!-- end modal for contact -->
