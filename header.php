@@ -19,6 +19,7 @@
 <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
 <!-- the jScrollPane script -->
 <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+<script src="js/jquery.dateslider.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
 $(function()
 {
@@ -35,7 +36,6 @@ $(function()
 </head>
 <body>
 <div id="wrapper">
-
 		<div id="header">
 		<div id="header_">
 			<a href="index.php" title="Home">
