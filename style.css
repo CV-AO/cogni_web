@@ -202,6 +202,8 @@ input[type="text"]:focus {outline: none;}
 /* internal content general */
 #internal_content {background:#E8F1F2;width:100%;height:941px;}
 #internal_content h1 {font-size:36px;color:#1d2957;font-family:'BloggerSans',sans-serif;margin:0;padding:0;}
+#internal_content h2 {color:#1d2957;font-size:36px;line-height:36px;padding:0 0 24px 0;font-family:'BloggerSans',sans-serif;}
+#internal_page_container {width:765px;margin:0 auto;}
 
 /* account page specific */
 #account_container {width:570px;margin:0 auto;}
@@ -285,3 +287,15 @@ ul.profiles_toydetail_block_bottom_right_top {margin:0 0 25px 0;}
 #profiles_bottom {background:url(images/add-button.png)no-repeat;padding:22px 0 0 102px;margin:37px 0 0 237px;width:572px;color:#323132;font-size:20px;font-family:'Roboto',sans-serif;height:73px;float:left;}
 input.profiles_name {border:0;border-bottom:1px solid #df5d59;overflow:hidden;resize:none;width:178px;background:white;color:#262725;font-family:'Roboto',sans-serif;outline:0;padding:0 0 4px 0;margin:0;height:30px;font-size:24px;}
 input.profiles_date {border:0;border-bottom:1px solid #df5d59;overflow:hidden;resize:none;width:136px;background:white;color:#262725;font-family:'Roboto',sans-serif;outline:0;padding:0;margin:0;height:23px;font-size:14px;}
+
+/* faq page */
+#faq_sidebar {width:174px;float:left;margin-right:28px;padding-left:10px;background:#F3F3F3;height:322px}
+#faq_sidebar h1 {background-color:#1d2957;color:#fff;font-size:16px;text-transform:uppercase;line-height:30px;border-top-left-radius:4px;border-top-right-radius:4px;padding:0 0 0 18px;}
+#faq_sidebar ul {margin:0;padding:0;list-style:none;}
+#faq_sidebar ul li {line-height:30px;height:30px;}
+#faq_sidebar ul li:hover {background:#B2B5C3;}
+#faq_sidebar ul li a {color:gray;text-decoration:none;font-size:14px;}
+#faq_sidebar ul li a:hover {color:#fff;}
+#internal_content_block_right {float:right;width:553px}
+.faq_content_title {font-weight:bold;margin:0 0 5px 0;}
+.faq_question {float:left;margin:0 0 10px 0;padding:0 0 10px 0;border-bottom:1px solid #ccc;}
