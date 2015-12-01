@@ -47,7 +47,7 @@ $(function()
 					<li class="header_menu_current"><a href="index.php" title="Dashboard">Dashboard</a></li>
 					<li><a href="profiles.php" title="Profiles">Profiles</a></li>
 					<li><a href="account.php" title="Account">Account</a></li>
-					<li><a href="" title="FAQ">FAQ</a></li>
+					<li><a href="faq.php" title="FAQ">FAQ</a></li>
 					<li><a href="#excontact" rel="modal:open" title="Contact">Contact</a></li>
 					<li class="header_menu_circle"><a href="" title="Sign Out">Sign Out</a></li>
 					<li class="header_menu_circle"><a href="" title="Order">Order</a></li>
