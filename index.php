@@ -224,9 +224,9 @@
 			<div id="content_right">
 				<div id="content_right_one">
 					<div id="content_right_left">
-						<div id="content_right_left_leftarrow"><img src="images/left-arrow.png" alt=""></div>
+						<div id="content_right_left_leftarrow" style="cursor:pointer" onclick="javascript:dateslide('left');return false;"><img src="images/left-arrow.png" alt=""></div>
 						<div id="content_right_left_date">July 30</div>
-						<div id="content_right_left_rightarrow"><img src="images/right-arrow.png" alt=""></div>
+						<div id="content_right_left_rightarrow" style="cursor:pointer" onclick="javascript:dateslide('right');return false;"><img src="images/right-arrow.png" alt=""></div>
 					</div>
 					<div id="content_right_right">
 						<ul>
@@ -238,7 +238,13 @@
 					</div>
 				</div>
 				<div id="content_right_two">
-				<!-- animation will go here -->
+					<div id='content_right_two_jokes' class='content_right_two_category'><span class='count'>31</span>% Jokes</div>
+					<div id='content_right_two_stories' class='content_right_two_category'><span class='count'>10</span>% Stories</div>
+					<div id='content_right_two_questions' class='content_right_two_category'><span class='count'>45</span>% Questions</div>
+					<div id='content_right_two_games' class='content_right_two_category'><span class='count'>14</span>% Games</div>
+					<div id='content_right_two_chart'>
+						
+					</div>
 				</div>
 				<div id="content_right_three">
 					<div id="content_right_three_block_one">
