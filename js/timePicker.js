@@ -1,12 +1,3 @@
-
-var clickoff = null;
-var selectOpened = false;
-
-function clickoff(){
-  
-  //clickoff = null;
-}
-
 function zeroPad(num, places) {
   var zero = places - num.toString().length + 1;
   return Array(+(zero > 0 && zero)).join("0") + num;
@@ -14,6 +5,7 @@ function zeroPad(num, places) {
 
 
 function buildTimePicker() {
+    $('#timePicker').remove();
     var result = document.createElement('div');
     result.setAttribute('id','timePicker');
     var result2 = document.createElement('div');
@@ -61,66 +53,45 @@ function buildTimePicker() {
     return result2;
 }
 
-//$('#timePicker').html(buildTimePicker());
-//document.getElementById('timePicker').appendChild(buildTimePicker());
 
 $(function(){
   
   $('body').click(function(){
-    if (selectOpened) {
-        selectOpened = false;
+    if (!$(event.target).closest('#timePicker, #profiles_toydetail_block_bottom_three_two, #profiles_toydetail_block_bottom_three_four').length) {
+      $('#timePicker').remove();
     }
   });
 
   $('.timeChange').on('click', '.ampmswitch', function(){
-    //alert('clickActivated');
-    
-    //change background
-    //$('.ampmswitch').css('background','#ccc');
+
     $(this).css('background','#f44');
     //change am or pm to display
     var switchId = $(this).attr('id');
     
     
-    //alert(switchId);
-    
     if(switchId == 'selectAM'){
-      //alert('AM');
       $(this).parents('.timeChange').find('.timeset2').html('AM');
-
     } else if (switchId == 'selectPM'){
-      //alert('PM');
       $(this).parents('.timeChange').find('.timeset2').html('PM');
-
     }
     
     $(this).parents('.timeChange').find('#timeBox').remove();
-    // $('#timePicker').remove();
-    clickoff();
-    
-    
+      $('#timePicker').remove();
   });
   
   
   $('.timeChange').click(function(){
-    console.log(clickoff);
      var currTime =$(this).find('.timeset1').text();
      currTime = currTime.split(":");
 
      var currAMPM =$(this).find('.timeset2').text();
-     // alert(currAMPM);
-
-    //if(clickoff != 1){
     $(this).append(buildTimePicker());
     
 
     if(currAMPM == 'AM'){
-      //$('.ampmswitch').css('background','#ccc');
 
       $('#selectAM').css('background','#f44');
     } else if (currAMPM == 'PM'){
-      // $('.ampmswitch').css('background','#ccc');
-
       $('#selectPM').css('background','#f44');
       
     }
@@ -129,15 +100,11 @@ $(function(){
     
       $(this).find('#hour option[value="'+currTime[0]+'"]').attr("selected","selected");
       $(this).find('#minute option[value="'+currTime[1]+'"]').attr("selected","selected");
-    
-    //clickoff = 1;
-    //}
   });
   
   
   $('.timeChange').on( 'click', '#hour', function(){
     console.log('hour minute clicked');
-    selectOpened = 1;
   });
   
     
