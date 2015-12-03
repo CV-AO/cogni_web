@@ -79,12 +79,12 @@
 					<div id="profiles_toydetail_block_bottom_three_one">Bedtime:</div>
 					<div id="profiles_toydetail_block_bottom_three_two" class="timeChange" val='contracted'>
 					  <div class="timeset1 tsf">1:00</div>
-            			<div class="timeset2 tsf">AM</div>
+            <div class="timeset2 tsf">AM</div>
 					</div>
 					<div id="profiles_toydetail_block_bottom_three_three">Wake Time:</div>
 					<div id="profiles_toydetail_block_bottom_three_four"  class="timeChange" val='contracted'>
-            <div class="timeset1 tsf">1:00</div>
-            <div class="timeset2 tsf">AM</div>
+    <div class="timeset1 tsf">1:00</div>
+    <div class="timeset2 tsf">AM</div>
 					</div>
 					<div class="profiles_toydetail_block_bottom_three_five" val='off' onclick="javascript:onoffToggle('profiles_toydetail_block_bottom_three_five');return false;">
 						<div class='onoffcircle'></div>
@@ -155,12 +155,12 @@
 					<div id="profiles_toydetail_block_bottom_three_one">Bedtime:</div>
 					<div id="profiles_toydetail_block_bottom_three_two" class="timeChange" val='contracted'>
 					  <div class="timeset1 tsf">1:00</div>
-            			<div class="timeset2 tsf">AM</div>
+            <div class="timeset2 tsf">AM</div>
 					</div>
 					<div id="profiles_toydetail_block_bottom_three_three">Wake Time:</div>
 					<div id="profiles_toydetail_block_bottom_three_four"  class="timeChange" val='contracted'>
-            		<div class="timeset1 tsf">1:00</div>
-            		<div class="timeset2 tsf">AM</div>
+    <div class="timeset1 tsf">1:00</div>
+    <div class="timeset2 tsf">AM</div>
 					</div>
 					<div class ="profiles_toydetail_block_bottom_three_five" val='off' onclick="javascript:onoffToggle('profiles_toydetail_block_bottom_three_five');return false;">
 						<div class='onoffcircle'></div>

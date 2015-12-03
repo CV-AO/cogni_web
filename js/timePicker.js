@@ -2,26 +2,29 @@ var clickoff = null;
 var selectOpened = false;
 
 function onoffToggle(id){
-  curr = $('.'+id).attr('val')
+  circle = $(event.target).find('.onoffcircle')
+  offtext = $(event.target).find('.offtext')
+  ontext = $(event.target).find('.ontext')
+  curr = $(event.target).attr('val')
   if (curr == 'off'){
-    $( ".onoffcircle" ).animate({
+    $(circle).animate({
     right: "44px",
     }, 300, function() {
-      $('.offtext').show()
+      $(offtext).show()
     });
-    $('.'+id).css('background','gainsboro')
-    $('.'+id).attr('val', 'on')
+    $(event.target).css('background','gainsboro')
+    $(event.target).attr('val', 'on')
     
-    $('.ontext').hide()
+    $(ontext).hide()
   }else{
-    $( ".onoffcircle" ).animate({
+    $(circle).animate({
     right: "4px",
     }, 300, function() {
-      $('.ontext').show()
+      $(ontext).show()
     });
-    $('.'+id).css('background','#8cb75a')
-    $('.'+id).attr('val', 'off')
-    $('.offtext').hide()
+    $(event.target).css('background','#8cb75a')
+    $(event.target).attr('val', 'off')
+    $(offtext).hide()
     
   }
 }
@@ -53,7 +56,6 @@ function buildTimePicker() {
     minutes.setAttribute('id', 'minute');
     for (var m=0; m<60; m++) {
         var option = document.createElement('option');
-        //console.log(m);
         var min = zeroPad(m, 2); // "05"
         option.setAttribute('value', min);
         option.appendChild(document.createTextNode(min ));
@@ -144,8 +146,6 @@ $(function(){
             return
           }
           a = $(this).find('#timePicker')
-          console.log('found one')
-          console.log(a.attr('id'))
           a.remove()
           $('.timeChange').attr('val','contracted')
         }
@@ -175,7 +175,6 @@ $(function(){
   
   
   $('.timeChange').on( 'click', '#hour', function(){
-    console.log('hour minute clicked');
     selectOpened = 1;
   });
   
