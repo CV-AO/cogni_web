@@ -105,9 +105,13 @@
 					<div id="profiles_toydetail_block_top">
 						<div id="profiles_toydetail_block_top_left_female"></div>
 						<div id="profiles_toydetail_block_top_right">
-							<div id="profiles_toydetail_block_top_right_name">Rex</div>
-							<div id="profiles_toydetail_block_top_right_birthdate">December 08, 1984</div>
-							<div id="profiles_toydetail_block_top_right_setupdate">Set Up On: <i>8/2/2015</i>   Reset Toy</div>
+							<div id="profiles_toydetail_block_bottom_two_top_right_name">
+									<input type="text" class="profiles_name" placeholder="Name">
+							</div>
+							<div id="profiles_toydetail_block_bottom_two_top_right_birthdate">
+								<input type="text" class="profiles_date" placeholder="Date">
+							</div>
+							<div id="profiles_toydetail_block_bottom_two_top_right_lastused"><b>Last Used:</b> <i>6h hour</i></div>
 						</div>
 					</div>
 					<div id="profiles_toydetail_block_bottom">
@@ -130,8 +134,12 @@
 					<div id="profiles_toydetail_block_bottom_two_top">
 						<div id="profiles_toydetail_block_bottom_two_top_left_female"></div>
 						<div id="profiles_toydetail_block_bottom_two_top_right">
-							<div id="profiles_toydetail_block_bottom_two_top_right_name">Tater</div>
-							<div id="profiles_toydetail_block_bottom_two_top_right_birthdate">November 24, 2011</div>
+							<div id="profiles_toydetail_block_bottom_two_top_right_name">
+									<input type="text" class="profiles_name" placeholder="Name">
+							</div>
+							<div id="profiles_toydetail_block_bottom_two_top_right_birthdate">
+								<input type="text" class="profiles_date" placeholder="Date">
+							</div>
 							<div id="profiles_toydetail_block_bottom_two_top_right_lastused"><b>Last Used:</b> <i>6h hour</i></div>
 						</div>
 					</div>
