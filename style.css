@@ -267,18 +267,22 @@ ul.profiles_toydetail_block_bottom_right_top {margin:0 0 25px 0;}
 #profiles_toydetail_block_bottom_three_two {float:left;margin:4px 0 0 56px;padding:0;height:67px;width:201px;background:url(images/profile-timepicker-bg.png)no-repeat;}
 #profiles_toydetail_block_bottom_three_three {float:left;margin:14px 0 0 57px;padding:0;height:15px;width:200px;color:#323132;font-size:14px;font-family:'Roboto',san-serif;font-weight:700;}
 #profiles_toydetail_block_bottom_three_four {float:left;margin:4px 0 0 56px;padding:0;height:67px;width:201px;background:url(images/profile-timepicker-bg.png)no-repeat;}
-#profiles_toydetail_block_bottom_three_five {background:url(images/o-n-button.png)no-repeat;width:75px;height:35px;margin:210px 0 0 110px;}
+.profiles_toydetail_block_bottom_three_five {position:relative;background:#8cb75a;border-radius:500px;width:75px;height:35px;margin:210px 0 0 103px;}
+.onoffcircle{position:absolute;top:4px;right:4px;background:white;height:27px;width:27px;border-radius:15px;}
+.onoffbuttontext{position:absolute;top:8px;font-family:'Roboto',sans-serif;}
+.ontext{left:8px;}
+.offtext{right:8px;}
 input.profiles_name {border:0;border-bottom:1px solid #df5d59;overflow:hidden;resize:none;width:178px;background:white;color:#262725;font-family:'Roboto',sans-serif;outline:0;padding:0 0 4px 0;margin:0;height:30px;font-size:24px;}
 input.profiles_date {border:0;border-bottom:1px solid #df5d59;overflow:hidden;resize:none;width:136px;background:white;color:#262725;font-family:'Roboto',sans-serif;outline:0;padding:0;margin:0;height:23px;font-size:14px;}
 .timeset1{display: inline-block;height: 100%;vertical-align: middle;width: 120px;}
 .timeset2{display: inline-block;height: 100%;vertical-align: middle;width: 69px;}  
-.tsf{font-family: "Roboto",sans-serif;font-size: 40px; font-weight: 600;display: inline-block;  padding: 7px 0 0 0;text-align: center;vertical-align: middle;}
+.tsf{font-family: "BloggerSans",sans-serif;font-size: 50px;display: inline-block;  padding: 11px 0 0 0;text-align: center;vertical-align: middle;}
 .timeChange {position: relative;}
-#timebox{position : absolute;top: 80%;}
-#timePicker {background: #fbfbfb;border: 1px solid #000;border-radius: 7px;font-family: "Roboto",sans-serif;font-size: 24px ; font-weight: 600;display: block;padding: 20px 0;position: relative;text-align: center;width: 180px;z-index: 22;}
-#timePicker select {font-size: 16px;font-weight: 600;height: 35px;position: relative;pointer-events: auto;width: 60px;}
+#timebox{position : absolute;top: 113%;}
+#timePicker {background: #fbfbfb;border: 1px solid #000;border-radius: 5px;font-family: "Roboto",sans-serif;font-size: 24px ; font-weight: 600;display: block;padding: 20px 0;position: relative;text-align: center;width: 195px;z-index: 22;}
+#timePicker select {font-size: 22px;font-weight: 600;height:30px;position: relative;pointer-events: auto;width: 60px;}
 #timePicker:after, #timePicker:before {bottom: 100%;left: 50%;border: solid transparent;content: " ";height: 0;width: 0;position: absolute;pointer-events: inherit;}
 #timePicker:after {border-bottom-color: #fbfbfb;border-width: 15px;margin-left: -15px;}
 #timePicker:before {border-bottom-color: #000;border-width: 16px;margin-left: -16px;}
-.ampmpill {border-radius: 8px;box-sizing: border-box;font-family: "Roboto",sans-serif;font-size: 0px;height: 22px;margin: 20px auto 0 auto;overflow: hidden;width: 130px;}
-.ampmpill .ampmswitch {background: #ccc;color: #fff;cursor: pointer;display: inline-block;font-size: 16px;height: 22px;padding: 2px 0 0 0;text-align: center;width: 50%;}
+.ampmpill {border-radius: 8px;box-sizing: border-box;font-family: "Roboto",sans-serif;font-size: 0px;height:30px;margin: 20px auto 0 auto;overflow: hidden;width: 140px;}
+.ampmpill .ampmswitch {background: #ccc;color: #fff;cursor: pointer;display: inline-block;font-size: 16px;height: 30px;padding: 5px 0 0 0;text-align: center;width: 50%;}

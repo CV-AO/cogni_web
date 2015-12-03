@@ -1,5 +1,5 @@
 <?php include 'header.php';?>
-<div id="profiles_container">
+</div><div id="profiles_container">
 	<div id="profiles_content">
 <!-- first block -->
 	<div id="profiles_toydetail_block_one">
@@ -77,16 +77,20 @@
 				</div>
 				<div id="profiles_toydetail_block_bottom_three">
 					<div id="profiles_toydetail_block_bottom_three_one">Bedtime:</div>
-					<div id="profiles_toydetail_block_bottom_three_two" class="timeChange">
+					<div id="profiles_toydetail_block_bottom_three_two" class="timeChange" val='contracted'>
 					  <div class="timeset1 tsf">1:00</div>
-            <div class="timeset2 tsf">AM</div>
+            			<div class="timeset2 tsf">AM</div>
 					</div>
 					<div id="profiles_toydetail_block_bottom_three_three">Wake Time:</div>
-					<div id="profiles_toydetail_block_bottom_three_four"  class="timeChange">
+					<div id="profiles_toydetail_block_bottom_three_four"  class="timeChange" val='contracted'>
             <div class="timeset1 tsf">1:00</div>
             <div class="timeset2 tsf">AM</div>
 					</div>
-					<div id="profiles_toydetail_block_bottom_three_five"></div>
+					<div class="profiles_toydetail_block_bottom_three_five" val='off' onclick="javascript:onoffToggle('profiles_toydetail_block_bottom_three_five');return false;">
+						<div class='onoffcircle'></div>
+						<div class='onoffbuttontext offtext'>OFF</div>
+						<div class='onoffbuttontext ontext'>ON</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -148,11 +152,26 @@
 					</div>					
 				</div>
 				<div id="profiles_toydetail_block_bottom_three">
-				ters
+					<div id="profiles_toydetail_block_bottom_three_one">Bedtime:</div>
+					<div id="profiles_toydetail_block_bottom_three_two" class="timeChange" val='contracted'>
+					  <div class="timeset1 tsf">1:00</div>
+            			<div class="timeset2 tsf">AM</div>
+					</div>
+					<div id="profiles_toydetail_block_bottom_three_three">Wake Time:</div>
+					<div id="profiles_toydetail_block_bottom_three_four"  class="timeChange" val='contracted'>
+            		<div class="timeset1 tsf">1:00</div>
+            		<div class="timeset2 tsf">AM</div>
+					</div>
+					<div class ="profiles_toydetail_block_bottom_three_five" val='off' onclick="javascript:onoffToggle('profiles_toydetail_block_bottom_three_five');return false;">
+						<div class='onoffcircle'></div>
+						<div class='onoffbuttontext offtext'>OFF</div>
+						<div class='onoffbuttontext ontext'>ON</div>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div id="profiles_bottom">Use the Onboarding App on your phone to add a new CogniToy</div>
 	</div>
 </div>
+
 <?php include 'footer.php'; ?>
