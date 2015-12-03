@@ -223,10 +223,10 @@
 			</div>
 			<div id="content_right">
 				<div id="content_right_one">
-					<div id="content_right_left">
+					<div id="content_right_left" onclick="javascript:dateslide('left');return false;">
 						<div id="content_right_left_leftarrow"><img src="images/left-arrow.png" alt=""></div>
 						<div id="content_right_left_date">July 30</div>
-						<div id="content_right_left_rightarrow"><img src="images/right-arrow.png" alt=""></div>
+						<div id="content_right_left_rightarrow" onclick="javascript:dateslide('right');return false;"><img src="images/right-arrow.png" alt=""></div>
 					</div>
 					<div id="content_right_right">
 						<ul>
