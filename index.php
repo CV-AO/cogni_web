@@ -238,7 +238,13 @@
 					</div>
 				</div>
 				<div id="content_right_two">
-				<!-- animation will go here -->
+					<div id='content_right_two_jokes' class='content_right_two_category'><span class='count'>31</span>% Jokes</div>
+					<div id='content_right_two_stories' class='content_right_two_category'><span class='count'>10</span>% Stories</div>
+					<div id='content_right_two_questions' class='content_right_two_category'><span class='count'>45</span>% Questions</div>
+					<div id='content_right_two_games' class='content_right_two_category'><span class='count'>14</span>% Games</div>
+					<div id='content_right_two_chart'>
+						
+					</div>
 				</div>
 				<div id="content_right_three">
 					<div id="content_right_three_block_one">
