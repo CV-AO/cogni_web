@@ -275,7 +275,7 @@ ul.profiles_toydetail_block_bottom_right_top {margin:0 0 25px 0;}
 #profiles_toydetail_block_bottom_three_two {float:left;margin:4px 0 0 56px;padding:0;height:67px;width:201px;background:url(images/profile-timepicker-bg.png)no-repeat;}
 #profiles_toydetail_block_bottom_three_three {float:left;margin:14px 0 0 57px;padding:0;height:15px;width:200px;color:#323132;font-size:14px;font-family:'Roboto',san-serif;font-weight:700;}
 #profiles_toydetail_block_bottom_three_four {float:left;margin:4px 0 0 56px;padding:0;height:67px;width:201px;background:url(images/profile-timepicker-bg.png)no-repeat;}
-.profiles_toydetail_block_bottom_three_five {position:relative;background:#8cb75a;border-radius:500px;width:75px;height:35px;margin:210px 0 0 120px;}
+.profiles_toydetail_block_bottom_three_five {position:relative;background:#8cb75a;border-radius:500px;width:75px;height:35px;margin:210px 0 0 120px;cursor:pointer}
 .onoffcircle{position:absolute;top:4px;right:4px;background:white;height:27px;width:27px;border-radius:15px;}
 .onoffbuttontext{position:absolute;top:8px;font-family:'Roboto',sans-serif;}
 .ontext{left:8px;}
