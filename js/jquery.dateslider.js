@@ -44,6 +44,7 @@ function dateslide(direction){
 	else {
 		cd.setDate(cd.getDate() + 1);
 		nd = monthNames[cd.getMonth()]+" "+ cd.getDate()
+    console.log(nd)
 		$('#content_right_left_date').html(nd)
 	}
 }
