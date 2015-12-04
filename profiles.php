@@ -77,12 +77,12 @@
 				</div>
 				<div id="profiles_toydetail_block_bottom_three">
 					<div id="profiles_toydetail_block_bottom_three_one">Bedtime:</div>
-					<div id="profiles_toydetail_block_bottom_three_two" class="timeChange" val='contracted'>
+					<div id="profiles_toydetail_block_bottom_three_two" class="timeChange" style='cursor:pointer' val='contracted'>
 					  <div class="timeset1 tsf">1:00</div>
             <div class="timeset2 tsf">AM</div>
 					</div>
 					<div id="profiles_toydetail_block_bottom_three_three">Wake Time:</div>
-					<div id="profiles_toydetail_block_bottom_three_four"  class="timeChange" val='contracted'>
+					<div id="profiles_toydetail_block_bottom_three_four"  class="timeChange" style='cursor:pointer' val='contracted'>
     <div class="timeset1 tsf">1:00</div>
     <div class="timeset2 tsf">AM</div>
 					</div>
@@ -161,12 +161,12 @@
 				</div>
 				<div id="profiles_toydetail_block_bottom_three">
 					<div id="profiles_toydetail_block_bottom_three_one">Bedtime:</div>
-					<div id="profiles_toydetail_block_bottom_three_two" class="timeChange" val='contracted'>
+					<div id="profiles_toydetail_block_bottom_three_two" class="timeChange" style='cursor:pointer' val='contracted'>
 					  <div class="timeset1 tsf">1:00</div>
             <div class="timeset2 tsf">AM</div>
 					</div>
 					<div id="profiles_toydetail_block_bottom_three_three">Wake Time:</div>
-					<div id="profiles_toydetail_block_bottom_three_four"  class="timeChange" val='contracted'>
+					<div id="profiles_toydetail_block_bottom_three_four"  class="timeChange" style='cursor:pointer' val='contracted'>
     <div class="timeset1 tsf">1:00</div>
     <div class="timeset2 tsf">AM</div>
 					</div>
