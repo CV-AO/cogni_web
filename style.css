@@ -1,17 +1,6 @@
 /*
 Master css to Dashboard design
 10/23/2015 whilst Tater sleeps next tome
-
-TODO
-finish global site width using sean's directive
-add prev/next buttons on top left sidebar 
-mailing list set up
-popups submitting content via email
-update order link in header
-date/time bed picker
-fix kristina's cognitoy section on profiles
-link up the + button at bottom of profiles
-faq page
 */
 
 /* general */
@@ -149,7 +138,15 @@ select.suggest_content-dropdown {-webkit-appearance: none;-moz-appearance: none;
 #content_right_right ul li {display:inline;float:left;margin:0 5px;}
 #content_right_right ul li a {text-decoration:none;font-size:16px;background:url(images/rectangle-83-copy-2.png) no-repeat;color:#df5d59;font-family: 'Roboto', sans-serif;display:block;width:90px;height:29px;text-align:center;padding:3px 0 0 0;}
 #content_right_right ul li a:hover {background:url(images/rectangle-83.png)no-repeat;color:#fff;text-decoration:none;font-size:16px;width:90px;height:29px;text-align:center;padding:3px 0 0 0;}
-#content_right_two {background:#fff url(images/2015-10-26_1312.png)no-repeat center center;height:376px;margin:0 0 27px 0;}
+#content_right_two {position:relative;background:white;height:376px;margin:0 0 27px 0;font-family: 'Roboto', sans-serif;font-size:18px;border-bottom-left-radius:5px;border-bottom-right-radius: 5px;}
+.content_right_two_category{position:absolute;background-position:center;height:45px;width:188px;color:white;font-size:20px;font-weight:bold;padding-top:10px;}
+#content_right_two_jokes{top:83px;left:83px;background:url(images/jokesback.png)no-repeat;text-indent:17px;}
+#content_right_two_questions{top:83px;right:88px;background:url(images/questionsback.png)no-repeat;text-indent:38px;}
+#content_right_two_games{top:243px;right:88px;background:url(images/gamesback.png)no-repeat;text-indent:64px;}
+#content_right_two_stories{top:243px;left:83px;background:url(images/storiesback.png)no-repeat;text-indent:17px;}
+#content_right_two_chart{position:absolute;top: 30px;left: 323.5px;height: 300px;width: 300px;}
+#content_right_two_minutes{position:absolute;top:53%;left:48.5%;transform: translate(-50%, -50%);font-size:22px;color:#262725;text-align:center}
+#minutes_used{height:86px;font-size:100px;font-family:'BloggerSans',sans-serif;}
 #content_right_three {margin:0 0 40px 0;height:260px;float:left;}
 #content_right_three_block_one {background:#fff url(images/icon-comment-icon-comment.png) no-repeat center center;width:223px;height:246px;float:left;margin:0 10px 0 0;border:3px solid #95c2ce; border-radius:5px;}
 #content_right_three_block_two {background:#fff url(images/icon-pawn.png) no-repeat center center;width:223px;height:246px;float:left;margin:0 10px 0 0;border:3px solid #95c2ce;border-radius:5px;}
@@ -192,8 +189,8 @@ select.suggest_content-dropdown {-webkit-appearance: none;-moz-appearance: none;
 #footer_three ul li {margin:6px 0;padding:0;}
 #footer_three ul li a {text-decoration:none;color:#b3b3b3;font-size:17px;}
 #footer_four {width:316px;float:right;padding:0;margin:0;}
-#footer_four h3 {color:#fff;padding:12px 0 0 0;font-family:'BloggerSans',sans-serif;}
-input[type="text"] {display: block;height:45px;font-family: sans-serif;font-size: 18px;appearance: none;box-shadow: none;border-radius: none;padding:0 0 0 10px;}
+#footer_bottom{border-top:1px solid #666666;width:1096px;float:left;height:30px;padding:26px 0 0 0;color:#878787;margin:0 0 0 91px;font-family:'Roboto',sans-serif;}
+input[type="text"] {display: block;height:45px;font-family: sans-serif;font-size: 18px;appearance: none;box-shadow: none;border-radius: none;float:left;padding:0 0 0 10px;}
 input[type="text"]:focus {outline: none;}
 .style-1 input[type="text"] {padding: 10px;border: solid 1px #dcdcdc;transition: box-shadow 0.3s, border 0.3s;}
 .style-1 input[type="text"]:focus,
@@ -240,7 +237,7 @@ input[type="text"]:focus {outline: none;}
 #account_container_box_three_right input[type="text"], #account_container_box_two_right input[type="text"], #account_container_box_seven_right input[type="text"], #account_container_box_eight_right input[type="text"], #account_container_box_nine_right input[type="text"] {display: block;margin: 0;color:#262725;width: 283px;font-family:'Roboto',sans-serif;font-size: 14px;appearance: none;box-shadow: none;border-radius: 5px;border:1px solid #ccc;height:34px;}
 #account_container_box_three_right input[type="text"]:focus, #account_container_box_two_right input[type="text"]:focus, #account_container_box_seven_right input[type="text"]:focus, #account_container_box_eight_right input[type="text"]:focus, #account_container_box_nine_right input[type="text"]:focus {outline: none;border: solid 1px #707070;box-shadow: 0 0 5px 1px #969696;}
 #account_save_one {background:#df5d59;color:#ffffff;font-size:20px;font-family:'BloggerSans',sans-serif;padding:10px;margin:0;border:0;border-radius:5px;width:96px;border:0;outline:none;}
-#account_save_two {background:#df5d59;color:#ffffff;font-size:20px;font-family:'BloggerSans',sans-serif;padding:10px;margin-top:20px;border:0;border-radius:5px;border:0;outline:none;text-align:center;}
+#account_save_two {background:#df5d59;color:#ffffff;font-size:20px;font-family:'BloggerSans',sans-serif;padding:10px;margin:0;border:0;border-radius:5px;text-align:center;border:0;outline:none;}
 input[type=checkbox] {visibility: hidden;}	
 .accountCheckbox {width: 17px;margin: 0 6px 0 0;position:relative;float:left;}	
 .accountCheckbox label {cursor: pointer;position: absolute;width: 17px;height: 17px;top: 0;left: 0;background: url(images/rectangle-219-copy.png);border:0 none #fff;}
