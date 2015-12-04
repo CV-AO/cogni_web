@@ -114,8 +114,11 @@ select.suggest_content-dropdown {-webkit-appearance: none;-moz-appearance: none;
 #header_menu ul li.header_menu_current {color:#df5d59;}
 
 /*contact form modal styling */
+#excontact{width:285px;}
+#excontact h1{text-align: center; font-size: 33px; color:#1d2957;font-family:'BloggerSans',sans-serif;}
+#excontact #reqfields_notification{text-align: right;color:red;font-size:12;font-family:'Roboto',sans-serif;}
 #contact_message {border:1px solid #ccc;box-sizing:border-box;line-height:40px;padding:0 10px;border-radius:5px;background-color:#ebebeb;height:98px;width:100%;resize:none;font-size:14px;margin-bottom:10px;font-family:'Roboto',sans-serif;}
-#contact_input {border:1px solid #ccc;box-sizing:border-box;line-height:40px;padding:0 10px;border-radius:5px;background-color:#ebebeb;height:40px;width:100%;resize:none;font-size:14px;margin-bottom:10px;font-family:'Roboto',sans-serif;}
+.contact_input {border:1px solid #ccc;box-sizing:border-box;line-height:40px;padding:0 10px;border-radius:5px;background-color:#ebebeb;height:40px;width:100%;resize:none;font-size:14px;margin-bottom:10px;font-family:'Roboto',sans-serif;}
 
 /* today's tip section */
 #block_under_header {}
@@ -190,7 +193,7 @@ select.suggest_content-dropdown {-webkit-appearance: none;-moz-appearance: none;
 #footer_three ul li a {text-decoration:none;color:#b3b3b3;font-size:17px;}
 #footer_four {width:316px;float:right;padding:0;margin:0;}
 #footer_four h3 {color:#fff;padding:12px 0 0 0;font-family:'BloggerSans',sans-serif;}
-input[type="text"] {display: block;margin: 0;width:268px;height:45px;font-family: sans-serif;font-size: 18px;appearance: none;box-shadow: none;border-radius: none;float:left;padding:0 0 0 10px;}
+input[type="text"] {display: block;height:45px;font-family: sans-serif;font-size: 18px;appearance: none;box-shadow: none;border-radius: none;padding:0 0 0 10px;}
 input[type="text"]:focus {outline: none;}
 .style-1 input[type="text"] {padding: 10px;border: solid 1px #dcdcdc;transition: box-shadow 0.3s, border 0.3s;}
 .style-1 input[type="text"]:focus,
@@ -237,7 +240,7 @@ input[type="text"]:focus {outline: none;}
 #account_container_box_three_right input[type="text"], #account_container_box_two_right input[type="text"], #account_container_box_seven_right input[type="text"], #account_container_box_eight_right input[type="text"], #account_container_box_nine_right input[type="text"] {display: block;margin: 0;color:#262725;width: 283px;font-family:'Roboto',sans-serif;font-size: 14px;appearance: none;box-shadow: none;border-radius: 5px;border:1px solid #ccc;height:34px;}
 #account_container_box_three_right input[type="text"]:focus, #account_container_box_two_right input[type="text"]:focus, #account_container_box_seven_right input[type="text"]:focus, #account_container_box_eight_right input[type="text"]:focus, #account_container_box_nine_right input[type="text"]:focus {outline: none;border: solid 1px #707070;box-shadow: 0 0 5px 1px #969696;}
 #account_save_one {background:#df5d59;color:#ffffff;font-size:20px;font-family:'BloggerSans',sans-serif;padding:10px;margin:0;border:0;border-radius:5px;width:96px;border:0;outline:none;}
-#account_save_two {background:#df5d59;color:#ffffff;font-size:20px;font-family:'BloggerSans',sans-serif;padding:10px;margin:0;border:0;border-radius:5px;width:96px;border:0;outline:none;}
+#account_save_two {background:#df5d59;color:#ffffff;font-size:20px;font-family:'BloggerSans',sans-serif;padding:10px;margin-top:20px;border:0;border-radius:5px;border:0;outline:none;text-align:center;}
 input[type=checkbox] {visibility: hidden;}	
 .accountCheckbox {width: 17px;margin: 0 6px 0 0;position:relative;float:left;}	
 .accountCheckbox label {cursor: pointer;position: absolute;width: 17px;height: 17px;top: 0;left: 0;background: url(images/rectangle-219-copy.png);border:0 none #fff;}

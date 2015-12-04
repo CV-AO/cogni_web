@@ -24,8 +24,7 @@
 
 <!-- TIMEPICKER JAVASCRIPT -->
 <script type="text/javascript" src="js/timePicker.js"></script>
-<!-- TIMEPICKER CSS -->
-<link rel="stylesheet" type="text/css" href="timepicker.css">
+<script type="text/javascript" src="js/jquery.sendforms.js"></script>
 
 <script type="text/javascript">
 $(function()
@@ -68,31 +67,20 @@ $(function()
 							$action=$_REQUEST['action']; 
 							if ($action=="")    /* display the contact form */ 
 							{ 
-						?> 
-						<form  action="" method="POST" enctype="multipart/form-data"> 
-							<input type="hidden" name="action" value="submit"> 
-							<input id="contact_input" name="name" type="text" value="" size="30" placeholder="Name*"/><br> 
-							<input id="contact_input" name="email" type="text" value="" size="30" placeholder="Email*"/><br> 
-							<textarea id="contact_message" name="message" rows="7" cols="30" placeholder="Message*"></textarea><br> 
-							<input type="submit" id="account_save_two" value="Send email"/>
-						</form> 
+						?>
+						<div id='excontact_content'> 
+							<h1>CONTACT US</h1>
+							<div id='reqfields_notification'>*Required Fields</div>
+							<form  id='contact_form' action="mailer.php" method="POST" enctype="multipart/form-data"> 
+								<input type="hidden" name="action" value="submit"> 
+								<input id='name_input' class="contact_input" name="name_input" type="text" value="" size="30" placeholder="Name*"/><br> 
+								<input id='email_input' class="contact_input" name="email_input" type="text" value="" size="30" placeholder="Email*"/><br> 
+								<textarea id="contact_message" class="contact_input" value="" name="contact_message" rows="7" cols="30" placeholder="Message*"></textarea><br> 
+								<div id="account_save_two" value="Send email" style="cursor:pointer" onclick="javascript:submitContact();return false;"/>SUBMIT</div>
+							</form> 
+						</div>
+						<div id='excontact_success'><h1>Success</h1></div>
 						<?php 
-						}  
-						else                /* send the submitted data */ 
-						{ 
-							$name=$_REQUEST['name']; 
-							$email=$_REQUEST['email']; 
-							$message=$_REQUEST['message']; 
-							if (($name=="")||($email=="")||($message=="")) 
-							{ 
-							echo "All fields are required, please fill <a href=\"\">the form</a> again."; 
-							} 
-							else{         
-							$from="From: $name<$email>\r\nReturn-path: $email"; 
-							$subject="Message sent using your contact form"; 
-							mail("zach@zachis.it", $subject, $message, $from); 
-							echo "Email sent!"; 
-							} 
 						}   
 						?> 
 					</div>

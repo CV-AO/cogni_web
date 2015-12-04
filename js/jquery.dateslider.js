@@ -53,9 +53,6 @@ $( document ).ready(function() {
 	doDoghnutAndCount()
 });
 
-$(function(){
-
-});
 
 ;(function($, undefined) {
   $.fn.drawDoughnutChart = function(data, options) {
