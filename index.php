@@ -272,7 +272,7 @@
 						<div id="submit_content_ideas_modal_left">
 						
 						</div>
-						<div id="submit_content_ideas_modal_right">
+						<div id="submit_content_ideas_modal_right" name = "submit_content_ideas_modal_right">
 							<div class="submit_content_ideas_modal_right_lines"><a href="#ex3" rel="modal:open" alt="">Suggest Content</a></div>
 							<div class="submit_content_ideas_modal_right_lines"><a href="#ex2" rel="modal:open" alt="">Suggest Joke</a></div>
 							<div class="submit_content_ideas_modal_right_lines"><a href="#ex4" rel="modal:open" alt="">Suggest Knock-Knock Joke</a></div>
@@ -283,85 +283,100 @@
 					</div>
 						<!-- modal for suggest content -->
 						<div id="ex3" style="display:none;">
+						<div class='excontact_content'>
 							<h1>Suggest Content</h1>
-							<div id="ex3_one">
-								<select class="suggest_content-dropdown"><option>Please Select a Category</option><option>General</option><option>Games</option><option>Stories</option><option>Academic Subjects</option><option>Topics of Interest</option></select>
+							<form  id='suggestcontent_form' action="mailer.php" method="POST" enctype="multipart/form-data">
+								<input type="hidden" id="formtype" name="formtype" value="suggestcontent_form"> 
+								<div id="ex3_one">
+<select id='suggestcontentdropdown' name='suggestcontentdropdown'class="suggest_content-dropdown"><option>Please Select a Category</option><option>General</option><option>Games</option><option>Stories</option><option>Academic Subjects</option><option>Topics of Interest</option></select>
+								</div>
+								<div id="ex3_two">
+<textarea id="sccommentbox" name="sccommentbox" value="" placeholder="Let us know what type of content you would like to see. All suggestions will be taken into consideration for future updates!"></textarea>
+								</div>
+							</form>
+					<div id="sc_send_button" class='modal_send_button' onclick="javascript:submitMailForm('suggestcontent_form');return false;">SEND</div>
 							</div>
-						<div id="ex3_two">
-<textarea id="commentBox" placeholder="Let us know what type of content you would like to see. All suggestions will be taken into consideration for future updates!"></textarea>
-
-
-						</div>
-						<input id="modal_content_send_button" type="submit" border="0" value="SEND" />
+							<div class='excontact_success'><h1>Success</h1></div>
 						</div>
 						<!-- modal for suggest joke -->
 					<div id="ex2" style="display:none;">
+						<div class='excontact_content'> 
 						<h1>Suggest Joke</h1>
 						<div id="ex2_content">
-							<div id="ex2_one">
-								<div id="ex2_one_left"></div>
-								<div id="ex2_one_right">
-								<div class="ex2_content_box">
-									<textarea class="ex2_three_right_textarea_large" style="border: none" placeholder="What is a joke CogniToys would tell?"></textarea>
+							<form  id='suggestjoke_form' action="mailer.php" method="POST" enctype="multipart/form-data">
+								<input type="hidden" id="formtype" name="formtype" value="suggestjoke_form">
+								<div id="ex2_one">
+									<div id="ex2_one_left"></div>
+									<div id="ex2_one_right">
+									<div class="ex2_content_box">
+<textarea id='sjcommentbox' name='sjcommentbox' class="ex2_three_right_textarea_large" style="border: none" placeholder="What is a joke CogniToys would tell?"></textarea>
+										</div>
+									</div>
+									
+								</div>
+								<div id="ex2_two">
+									<div id="ex2_two_left">						
+<textarea id='sjquestionbox' name='sjquestionbox' class="ex2_three_right_textarea_small" style="border: none" placeholder="?"></textarea>
+									</div>
+									<div id="ex2_two_right"></div>
+								</div>
+								<div id="ex2_three">
+									<div id="ex2_three_left"></div>
+									<div id="ex2_three_right">
+										<!--<div class="ex2_content_box">-->							
+<textarea id='sjpunchlinebox' name='sjpunchlinebox' class="ex2_three_right_textarea_large" style="border: none" placeholder="Write your punchline here! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec nisl massa. 
+											"></textarea>
+										<!--</div>-->								
 									</div>
 								</div>
-								
-							</div>
-							<div id="ex2_two">
-								<div id="ex2_two_left">						
-										<textarea class="ex2_three_right_textarea_small" style="border: none" placeholder="?"></textarea>
-								</div>
-								<div id="ex2_two_right"></div>
-							</div>
-							<div id="ex2_three">
-								<div id="ex2_three_left"></div>
-								<div id="ex2_three_right">
-									<!--<div class="ex2_content_box">-->							
-										<textarea class="ex2_three_right_textarea_large" style="border: none" placeholder="Write your punchline here! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec nisl massa. 
-										"></textarea>
-									<!--</div>-->								
-								</div>
-							</div>
-							<input id="modal_joke_send_button" type="submit" value="SEND" />
+							</form>
+							<div id="sj_send_button" class='modal_send_button' onclick="javascript:submitMailForm('suggestjoke_form');return false;">SEND</div>
 						</div>
+						</div>
+						<div class='excontact_success'><h1>Success</h1></div>
 					</div>
 						<!-- modal for knock-knock joke -->
 					<div id="ex4" style="display:none;">
+						<div class='excontact_content'> 
 						<h1>Suggest Knock-Knock Joke</h1>
-						<div id="ex4_content">
-							<div id="ex4_one">
-								<div id="ex4_one_left"></div>
-								<div id="ex4_one_right">
-									Knock-Knock!
-								</div>
-							</div>
-							<div id="ex4_two">
-								<div id="ex4_two_left">Who's There?</div>
-								<div id="ex4_two_right">
-								</div>
-							</div>
-							<div id="ex4_three">
-								<div id="ex4_three_left"></div>
-								<div id="ex4_three_right">
-									<textarea class="ex2_three_right_textarea_small_facingleft" style="border: none" placeholder="What is CogniToy's response?"></textarea>
-								</div>
-							</div>
-							<div id="ex4_four">
-								<div id="ex4_four_left">
-									<textarea class="ex2_three_right_textarea_small_ex4_four_left" style="border: none" maxlength="37"></textarea>
+							<div id="ex4_content">
+								<div id="ex4_one">
+									<div id="ex4_one_left"></div>
+									<div id="ex4_one_right">
+										Knock-Knock!
 									</div>
-								<div id="ex4_four_right">
 								</div>
-							</div>
-							<div id="ex4_five">
-								<div id="ex4_five_left"></div>
-								<div id="ex4_five_right">
-								<textarea class="ex2_three_right_textarea_large" style="border: none" placeholder="Write your punchline here!"></textarea>
+								<div id="ex4_two">
+									<div id="ex4_two_left">Who's There?</div>
+									<div id="ex4_two_right">
+									</div>
 								</div>
-							</div>
-						
-							<input id="modal_joke_send_button" type="submit" value="SEND" />
+						<form  id='suggestknockknock_form' action="mailer.php" method="POST" enctype="multipart/form-data">
+							<input type="hidden" id="formtype" name="formtype" value="suggestknockknock_form">
+								<div id="ex4_three">
+									<div id="ex4_three_left"></div>
+									<div id="ex4_three_right">
+<textarea id='kknamebox' name='kknamebox' class="ex2_three_right_textarea_small_facingleft" style="border: none" placeholder="What is CogniToy's response?"></textarea>
+									</div>
+								</div>
+								<div id="ex4_four">
+									<div id="ex4_four_left">
+<textarea id='kkwhobox' name='kkwhobox' class="ex2_three_right_textarea_small_ex4_four_left" style="border: none" maxlength="37"></textarea>
+										</div>
+									<div id="ex4_four_right">
+									</div>
+								</div>
+								<div id="ex4_five">
+									<div id="ex4_five_left"></div>
+									<div id="ex4_five_right">
+<textarea id='kkpunchlinebox' name='kkpunchlinebox' class="ex2_three_right_textarea_large" style="border: none" placeholder="Write your punchline here!"></textarea>
+									</div>
+								</div>
+						</form>
+						<div id="kk_send_button" class='modal_send_button' onclick="javascript:submitMailForm('suggestknockknock_form');return false;">SEND</div>
 						</div>
+						</div>
+					<div class='excontact_success'><h1>Success</h1></div>
 					</div>
 				<!-- Link to open the modal -->
 					<a href="#ex1" rel="modal:open">Submit Content Ideas</a>

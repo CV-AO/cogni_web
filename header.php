@@ -68,18 +68,28 @@ $(function()
 							if ($action=="")    /* display the contact form */ 
 							{ 
 						?>
-						<div id='excontact_content'> 
+						<div class='excontact_content'> 
 							<h1>CONTACT US</h1>
 							<div id='reqfields_notification'>*Required Fields</div>
 							<form  id='contact_form' action="mailer.php" method="POST" enctype="multipart/form-data"> 
-								<input type="hidden" name="action" value="submit"> 
+								<input type="hidden" id="formtype" name="formtype" value="contact_form"> 
 								<input id='name_input' class="contact_input" name="name_input" type="text" value="" size="30" placeholder="Name*"/><br> 
-								<input id='email_input' class="contact_input" name="email_input" type="text" value="" size="30" placeholder="Email*"/><br> 
-								<textarea id="contact_message" class="contact_input" value="" name="contact_message" rows="7" cols="30" placeholder="Message*"></textarea><br> 
-								<div id="account_save_two" value="Send email" style="cursor:pointer" onclick="javascript:submitContact();return false;"/>SUBMIT</div>
+								<input id='email_input' class="contact_input" name="email_input" type="text" value="" placeholder="Email*"/><br> 
+								<select name="contact_reason_dropdown" id="contact_reason_dropdown" class="suggest_content-dropdown">
+		                            <option value="">Reason for contacting us</option>
+		                            <option value="Just Saying Hello">Just Saying Hello</option>
+		                            <option value="Media Inquiry">Media Inquiry</option>
+		                            <option value="Wholesale Request">Wholesale Request</option>
+		                            <option value="Order Change">Order Change</option>
+		                            <option value="Payment Issue">Payment Issue</option>
+		                            <option value="Shipping Question">Shipping Question</option>
+		                            <option value="Other">Other</option>
+                        		</select>
+								<textarea id="contact_message" class="contact_input" value="" name="contact_message" rows="7" cols="30" placeholder="Your Message*"></textarea><br> 
+								<div id="account_save_two" value="Send email" style="cursor:pointer" onclick="javascript:submitMailForm('contact_form');return false;"/>SUBMIT</div>
 							</form> 
 						</div>
-						<div id='excontact_success'><h1>Success</h1></div>
+						<div class='excontact_success'><h1>Success</h1></div>
 						<?php 
 						}   
 						?> 
