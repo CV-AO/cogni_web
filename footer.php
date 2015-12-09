@@ -21,7 +21,7 @@
 			</div>
 			<div id="footer_four">
 				<h3>Join our mailing list:</h3>
-				<input type="text" placeholder="Your Email Address"><input type="submit" name="submit" value="Send" id="submit" />
+				<input id='join-mailing-list' type="text" placeholder="Your Email Address"><input type="submit" name="submit" value="Send" id="submit" />
 			</div>
 		</div>
 		<div id="footer_bottom">
